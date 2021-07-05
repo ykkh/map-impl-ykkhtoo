@@ -137,6 +137,9 @@ public class ForgetfulHashMapTest {
 		assertThrows(IllegalArgumentException.class, () -> {
 			myMap.put(null, null);
 		});
+		assertThrows(IllegalArgumentException.class, () -> {
+			myMap.get(null);
+		});
 	}
 
 	@SuppressWarnings("rawtypes")
